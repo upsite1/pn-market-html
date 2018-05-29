@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <!-- Localhost environment -->
+      <title>Title project</title>
+   </head>
+   <body>
+            <!-- Modal content-->
+            <div class="modal-content add_port_modal" id="add_item">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"><strong>Добавить проект</strong></h4>
+               </div>
+               <div class="modal-body">
+                  <div class="container-fluid">
+                    <form action="#a">
+                       <div class="row">
+                          <div class="col-sm-6">
+                             <div class="g_item text-center" id="drop-zone">
+                                <a href="#a" class="add_portfolio_item" id="clickHere">
+                                  <span class="but_1">
+                                    <span class="plus_icon"></span>
+                                    <span class="file_name">Добавить фото</span>
+                                    Перетащите сюда фотографии или
+                                    <span class="clickHere">
+                                      выберите с диска
+                                      <input type="file" multiple name="file" id="file">
+                                    </span>
+                                  </span>
+                                </a>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="row form-group info_cell">
+                          <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="input-text-1">Заголовок</label>
+                                <input type="text" class="form-control input-lg" id="input-text-1" placeholder="Например, «Ремонт однокомнатной квартиры».">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="input-text-2">Объем работ и срок исполнения</label>
+                                <input type="text" class="form-control input-lg" id="input-text-2" placeholder="Например, «150 кв.м. за 4 недели»">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="input-text-2_1">Средняя цена за единицу</label>
+                                <input type="text" class="form-control input-lg" id="input-text-2_1" placeholder="Например, «2500 руб. за кв.м.»">
+                            </div>
+                          </div>
+
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="input-text-3">Перечень выполненных работ</label>
+                                <textarea name="input-text-3" id="input-text-3" class="form-control" cols="30" rows="5" placeholder="Например, «стяжка пола, укладка паркета, выравнивание стен, поклейка обоев»"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="input-text-4">Дополнительная информация</label>
+                                <textarea name="input-text-4" id="input-text-4" class="form-control" cols="30" rows="5" placeholder="Например, «Все прочее, что Вы хотели бы рассказать о данном объекте»"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="input-text-5">Хеш-Теги</label>
+                                <input type="text" class="form-control input-lg" id="input-text-5" placeholder="Например, «Дизайн, ремонт квартиры»">
+                            </div>
+                          </div>
+                          <div class="col-sm-12"><br>
+                            <button class="btn btn-primary btn-lg">Сохранить</button>
+                            <button class="btn btn-default btn-lg">Отмена</button>
+                          </div>
+                       </div>
+                    </form>
+                  </div>
+               </div>
+                <script src="static/js/general.js"></script>
+            </div>
+   </body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <!-- Localhost environment -->
+        <link rel="stylesheet" href="static/css/all.css">
+        <!-- Production environment -->
+        <!--<link rel="stylesheet" href="static/css/all.min.css">-->
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="static/js/html5shiv.min.js"></script>
+        <script type="text/javascript" src="static/js/respond.min.js"></script>
+        <![endif]-->
+        <title>Title project</title>
+    </head>
+    <body class="doers_list_page orders_list">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar ib1"></span>
+                    <span class="icon-bar ib2"></span>
+                    <span class="icon-bar ib3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="static/img/logo.svg" alt="ProNovostroy"></a>
+                    <div class="navbar-back_link">
+                        <a href="#a">Форум</a>
+                    </div>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#a">Заказы</a></li>
+                        <li role="separator" class="divider">|</li>
+                        <li><a href="#a">Исполнители</a></li>
+                        <li role="separator" class="divider">|</li>
+                        <li><a href="#a">Как это работает?</a></li>
+                        <li role="separator" class="divider">|</li>
+                        <li class="active"><a href="#a">Войти</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="heading_block text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 h_t_wrap">
+                        <div class="h_namer">Вы мастер?</div>
+                        <div class="h_text">Увеличте поток клиентов или находите новых клиентов</div>
+                        <a href="#a" class="btn btn-info btn-lg">Регистрация исполнителя</a>
+                    </div>
+                    <div class="col-sm-6 h_t_wrap ht2">
+                        <div class="h_namer">Вы заказчик?</div>
+                        <div class="h_text">Найдите мастера по душе</div>
+                        <a href="#a" class="btn btn-info btn-lg">Добавить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container main_cont">
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="breadcrumb">
+                    <li><a href="#a">Главная</a></li>
+                    <li class="active">Исполнители</li>
+                </ul>
+              </div>
+              <div class="col-sm-6 hidden-xs">
+                <div class="view_count">
+                  <div class="iconized p_eye pull-sm-right">1078 исполнителей сейчас следят за лентой</div>
+                </div>
+              </div>
+            </div>
+            <div class="row title_block">
+                <div class="col-sm-9 col-md-7">
+                    <h1>Заказы на строительные работы</h1>
+                </div>
+                <div class="col-xs-12 visible-xs">
+                  <div class="view_count">
+                    <div class="iconized p_eye pull-sm-right">1078 исполнителей сейчас следят за лентой</div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-md-5 hidden-xs hidden-sm hidden-md">
+                    <ul class="filt list-unstyled pull-right">
+                        <li><a href="#a" class="active">Большой бюджет</a></li>
+                        <li><a href="#a">Мелкие заказы</a></li>
+                        <li><a href="#a">Заказы рядом</a></li>
+                    </ul>
+                </div>
+              <div class="col-sm-3 col-md-5 hidden-lg">
+                  <ul class="filt list-unstyled">
+                      <li><a href="#a" class="active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Большой бюджет <span class="caret"></span></a>
+                          <ul class="dropdown-menu lc_dropdown">
+                              <li>
+                                <a class="dropdown-item" href="#">Большой бюджет</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Мелкие заказы</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Заказы рядом</a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 pl-0">
+
+                    <nav class="sidebar">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-12 visible-xs visible-sm hidden-md lsb1">
+                                <div class="form-group-lg location_select_block">
+                                    <select class="form-control form-control-lg nav_clone selectpicker">
+                                        <option>Виды работ</option>
+                                        <option value="Мелкие бытовые услуги">Мелкие бытовые услуги</option>
+                                        <optgroup label="Комплексные работы">
+                                            <option value="Кладка печей и каминов">Кладка печей и каминов</option>
+                                            <option value="Ремонт ванной">Ремонт ванной</option>
+                                            <option value="Ремонт квартир и домов">Ремонт квартир и домов</option>
+                                            <option value="Ремонт кухни">Ремонт кухни</option>
+                                            <option value="Строительство бань и саун">Строительство бань и саун</option>
+                                            <option value="Строительство бассейнов">Строительство бассейнов</option>
+                                            <option value="Строительство гаражей">Строительство гаражей</option>
+                                            <option value="Строительство домов">Строительство домов</option>
+                                            <option value="Ремонт офиса">Ремонт офиса</option>
+                                            <option value="Ремонт туалета">Ремонт туалета</option>
+                                        </optgroup>
+                                        <option value="Строительно-монтажные работы">Строительно-монтажные работы</option>
+                                        <option value="Инженерные системы">Инженерные системы</option>
+                                        <option value="Отделочные работы">Отделочные работы</option>
+                                        <option value="Благоустройство территорий">Благоустройство территорий</option>
+                                        <option value="Проектирование и дизайн">Проектирование и дизайн</option>
+                                        <option value="Обслуживание объектов">Обслуживание объектов</option>
+                                        <option value="Интерьер">Интерьер</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-12 location_select_block lsb2">
+                                <div class="form-group-lg">
+                                    <select class="form-control form-control-lg location_select selectpicker">
+                                      <option>Ваш город</option>
+                                      <option>Москва</option>
+                                      <option>Воронеж</option>
+                                      <option>Сыктывкар</option>
+                                      <option>Нягань</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="side_nav_menu hidden-xs hidden-sm">
+                            <div class="sidebar-header">
+                                <h3 class="text-center">Виды работ</h3>
+                            </div>
+                            
+                            <ul class="list-unstyled">
+                                <li class="toggle_k">
+                                    <a href="#a">Мелкие бытовые услуги</a>
+                                </li>
+                                <li class="toggle_k extended" data-toggle="collapse" data-target="#list_k01">
+                                    <a href="#a">Комплексные работы</a>
+                                    <ul id="list_k01" class="collapse panel-collapse list-unstyled" id="list010">
+                                        <li><a href="#a">Кладка печей и каминов</a></li>
+                                        <li><a href="#a">Ремонт ванной</a></li>
+                                        <li><a href="#a">Ремонт квартир и домов</a></li>
+                                        <li><a href="#a">Ремонт кухни</a></li>
+                                        <li><a href="#a">Строительство бань и саун</a></li>
+                                        <li><a href="#a">Строительство бассейнов</a></li>
+                                        <li><a href="#a">Строительство гаражей</a></li>
+                                        <li><a href="#a">Строительство домов</a></li>
+                                        <li><a href="#a">Ремонт офиса</a></li>
+                                        <li><a href="#a">Ремонт туалета</a></li>
+                                    </ul>
+                                </li>
+                                <li class="toggle_k">
+                                    <a href="#a">Строительно-монтажные работы</a>
+                                </li>
+                                <li class="toggle_k">
+                                    <a href="#a">Инженерные системы</a>
+                                </li>
+                                <li class="toggle_k">
+                                    <a href="#a">Отделочные работы</a>
+                                </li>
+                                <li class="toggle_k">
+                                    <a href="#a">Благоустройство территорий</a>
+                                </li>
+                                <li class="toggle_k">
+                                    <a href="#a">Проектирование и дизайн</a>
+                                </li>
+                                <li class="toggle_k">
+                                    <a href="#a">Обслуживание объектов</a>
+                                </li>
+                                <li class="toggle_k">
+                                    <a href="#a">Интерьер</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                  <div class="orders_block">
+                      <div class="row orders_lis_row">
+                        <div class="col-md-12">
+                          <div class="orders_lis">
+                            <div class="item_ord clearfix">
+                              <div class="row">
+                                <div class="col-sm-9 col-xl-10">
+                                  <div class="p_brief_title"><a href="#a">Требуется выполнить плиточные работы и демонтаж/монтаж перегородки из п/блоков, короб из г/картона</a></div>
+                                </div>
+                                <div class="col-sm-3 col-xl-2">
+                                  <div class="pull-right p_list p_iconized">10 предложений</div>
+                                </div>
+                              </div>
+                              <div class="p_brief">Требуется выполнить плиточные работы: пол- укладка --68м2 (из них--стяжка-36м2); <br>Демонтаж-7м2 и монтаж перегородки из пеноблоков -21м2;<br>Монтаж короба длиной 5м; [<a href="#a">..</a>]</div>
+                              <div class="p_loc p_iconized pull-left">Москва</div>
+                              <div class="p_iconized pull-left p_budget">Большой бюджет (50 000 - 100 000 рублей)</div>
+                              <div class="p_iconized pull-left p_time">Добавлен: 23.01.2018</div>
+                            </div>
+                            <div class="item_ord clearfix">
+                              <div class="row">
+                                <div class="col-sm-9 col-xl-10">
+                                  <div class="p_brief_title"><a href="#a">Требуется выполнить плиточные работы и демонтаж/монтаж перегородки из п/блоков, короб из г/картона</a></div>
+                                </div>
+                                <div class="col-sm-3 col-xl-2">
+                                  <div class="pull-right p_list p_iconized">10 предложений</div>
+                                </div>
+                              </div>
+                              <div class="p_brief">Требуется выполнить плиточные работы: пол- укладка --68м2 (из них--стяжка-36м2); <br>Демонтаж-7м2 и монтаж перегородки из пеноблоков -21м2;<br>Монтаж короба длиной 5м; [<a href="#a">..</a>]</div>
+                              <div class="p_loc p_iconized pull-left">Москва</div>
+                              <div class="p_iconized pull-left p_budget">Большой бюджет (50 000 - 100 000 рублей)</div>
+                              <div class="p_iconized pull-left p_time">Добавлен: 23.01.2018</div>
+                            </div>
+                            <div class="item_ord clearfix">
+                              <div class="row">
+                                <div class="col-sm-9 col-xl-10">
+                                  <div class="p_brief_title"><a href="#a">Требуется выполнить плиточные работы и демонтаж/монтаж перегородки из п/блоков, короб из г/картона</a></div>
+                                </div>
+                                <div class="col-sm-3 col-xl-2">
+                                  <div class="pull-right p_list p_iconized">10 предложений</div>
+                                </div>
+                              </div>
+                              <div class="p_brief">Требуется выполнить плиточные работы: пол- укладка --68м2 (из них--стяжка-36м2); <br>Демонтаж-7м2 и монтаж перегородки из пеноблоков -21м2;<br>Монтаж короба длиной 5м; [<a href="#a">..</a>]</div>
+                              <div class="p_loc p_iconized pull-left">Москва</div>
+                              <div class="p_iconized pull-left p_budget">Большой бюджет (50 000 - 100 000 рублей)</div>
+                              <div class="p_iconized pull-left p_time">Добавлен: 23.01.2018</div>
+                            </div>
+                            <div class="item_ord clearfix">
+                              <div class="row">
+                                <div class="col-sm-9 col-xl-10">
+                                  <div class="p_brief_title"><a href="#a">Требуется выполнить плиточные работы и демонтаж/монтаж перегородки из п/блоков, короб из г/картона</a></div>
+                                </div>
+                                <div class="col-sm-3 col-xl-2">
+                                  <div class="pull-right p_list p_iconized pl_blank">Нет предложений</div>
+                                </div>
+                              </div>
+                              <div class="p_brief">Требуется выполнить плиточные работы: пол- укладка --68м2 (из них--стяжка-36м2); <br>Демонтаж-7м2 и монтаж перегородки из пеноблоков -21м2;<br>Монтаж короба длиной 5м; [<a href="#a">..</a>]</div>
+                              <div class="p_loc p_iconized pull-left">Москва</div>
+                              <div class="p_iconized pull-left p_budget">Большой бюджет (50 000 - 100 000 рублей)</div>
+                              <div class="p_iconized pull-left p_time">Добавлен: 23.01.2018</div>
+                            </div>
+                            <div class="item_ord clearfix">
+                              <div class="row">
+                                <div class="col-sm-9 col-xl-10">
+                                  <div class="p_brief_title"><a href="#a">Требуется выполнить плиточные работы и демонтаж/монтаж перегородки из п/блоков, короб из г/картона</a></div>
+                                </div>
+                                <div class="col-sm-3 col-xl-2">
+                                  <div class="pull-right p_list p_iconized">10 предложений</div>
+                                </div>
+                              </div>
+                              <div class="p_brief">Требуется выполнить плиточные работы: пол- укладка --68м2 (из них--стяжка-36м2); <br>Демонтаж-7м2 и монтаж перегородки из пеноблоков -21м2;<br>Монтаж короба длиной 5м; [<a href="#a">..</a>]</div>
+                              <div class="p_loc p_iconized pull-left">Москва</div>
+                              <div class="p_iconized pull-left p_budget">Большой бюджет (50 000 - 100 000 рублей)</div>
+                              <div class="p_iconized pull-left p_time">Добавлен: 23.01.2018</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="pagination-text pull-left hidden-xs">Страница 1 из 13</div>
+                          <div class="pagination pull-left">
+                            <a href="#a" class="btn btn-bordered btn-md">1</a>
+                            <a href="#a" class="btn btn-bordered btn-md">2</a>
+                            <a href="#a" class="btn btn-bordered btn-md">3</a>
+                            <a href="#a" class="btn btn-bordered btn-md">Вперёд &rsaquo;</a>
+                            <a href="#a" class="btn btn-bordered btn-md">&raquo;</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-bs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 col-md-1 footer-brand animated clearfix">
+                        <div class="logo_block">
+                            <img src="static/img/logo2.svg" width="70" alt="ProNovostroy">
+                        </div>
+                        <button type="button" class="f_nav-toggle navbar-toggle collapse" data-toggle="collapse"  data-target=".fadeInUp" aria-expanded="false">
+                        <span class="icon-bar ib1"></span>
+                        <span class="icon-bar ib2"></span>
+                        <span class="icon-bar ib3"></span>
+                        <span class="sr-only">Toggle navigation</span>
+                        </button>
+                    </div>
+                    <div class="col-sm-10 col-md-8 footer-nav animated fadeInUp">
+                        <div class="row ff_nav">
+                            <div class="col-sm-3">
+                                <ul>
+                                    <li>
+                                        <a href="#a">Заказы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#a">Исполнители</a>
+                                    </li>
+                                    <li>
+                                        <a href="#a">Форум</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-5">
+                                <ul>
+                                    <li>
+                                        <a href="#a">Как это работает?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#a">Стать исполнителем</a>
+                                    </li>
+                                    <li>
+                                        <a href="#a">Пользовательское соглашение</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 lsc">
+                                <ul class="pages">
+                                    <li>
+                                        <a href="#a">О проекте</a>
+                                    </li>
+                                    <li>
+                                        <a href="#a">Связаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 animated fadeInDown f_col3">
+                        <div class="footer-social">
+                            <div class="fs_title">Мы в соцсетях</div>
+                            <div class="fs_links_list s_links_list">
+                                <a href="#a" class="item vk">vk.com</a>
+                                <a href="#a" class="item fb">fb.com</a>
+                                <a href="#a" class="item inst">instagram.com</a>
+                                <a href="#a" class="item ytb">youtube.com</a>
+                                <a href="#a" class="item ytb">youtube.com</a>
+                            </div>
+                        </div>
+                        <div class="fc">
+                            <img src="images/count.jpg" alt="счётчик">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/moment-with-locales.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/bootstrap_datetimepicker.js"></script>
+        <script src="static/js/moment-with-locales.js"></script>
+        <script src="static/js/bootstrap-select.js"></script>
+        <script src="static/js/carousel.js"></script>
+        <script src="static/js/respond.min.js"></script>
+<script src="static/js/general.js"></script>
+    </body>
+</html>

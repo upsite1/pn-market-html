@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <!-- Localhost environment -->
+      <link rel="stylesheet" href="static/css/all.css">
+      <title>Title project</title>
+   </head>
+   <body>
+<div id="myModal" class="" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><strong>Услуги и цены</strong></h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row" id="accordion">
+            <div class="col-sm-12"><br>
+              <a href="#a">Добавить раздел каталога</a><br><br>
+              <div class="price_settings_wrap">
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#concrete" class="toggle_k extended">Бетонные работы</a>
+                  <div class="price_settings panel-collapse collapse" id="concrete">
+                    some stuff
+                  </div>
+                </div>
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#doors" class="toggle_k extended">Двери</a>
+                  <div class="price_settings panel-collapse collapse" id="doors">
+                    some stuff
+                  </div>
+                </div>
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#roads" class="toggle_k extended">Дорожное строительство</a>
+                  <div class="price_settings panel-collapse collapse" id="roads">
+                    <table class="table table-condensed">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <label for="pr_1" class="underdotted"><span class="blanker"><strong>Подготовительные работы</strong></span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_1" id="pr_1" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_2" class="underdotted"><span class="blanker">Выезд специалиста на объект</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_2" id="pr_2" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_3" class="underdotted"><span class="blanker">Консультация на участке</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_3" id="pr_3" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_4" class="underdotted"><span class="blanker">Геодезические и разбивочные работы на площадке</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_4" id="pr_4" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_5" class="underdotted"><span class="blanker">Оценка стоимости работ</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_5" id="pr_5" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_6" class="underdotted"><span class="blanker">Разборка существующего асфальтобетонного покрытия</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_6" id="pr_6" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_7" class="underdotted"><span class="blanker">Разборка дорожного бортового камня</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_7" id="pr_7" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_8" class="underdotted"><span class="blanker">Разборка тротуарного покрытия</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_8" id="pr_8" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_9" class="underdotted"><span class="blanker"><strong>Земляные работы</strong></span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_9" id="pr_9" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_10" class="underdotted"><span class="blanker">Разработка грунта вручную</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_10" id="pr_10" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_11" class="underdotted"><span class="blanker">Разработка грунта механизированным способом</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_11" id="pr_11" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_12" class="underdotted"><span class="blanker">Устройство дорожного корыта</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_12" id="pr_12" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_13" class="underdotted"><span class="blanker">Планировка грунта под отметку механизированным способом</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_13" id="pr_13" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_14" class="underdotted"><span class="blanker">Планировка грунта под отметку ручным способом</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_14" id="pr_14" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_15" class="underdotted"><span class="blanker"><strong>Устройство дорожного основания</strong></span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_15" id="pr_15" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_16" class="underdotted"><span class="blanker">Устройство основания из песка</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_16" id="pr_16" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_17" class="underdotted"><span class="blanker">Устройство основания из щебня известнякового</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_17" id="pr_17" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_18" class="underdotted"><span class="blanker">Устройство основания из вторичного бетонного щебня (рецикл</span>а)</label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_18" id="pr_18" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_19" class="underdotted"><span class="blanker">Устройство основания из кирпича битого</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_19" id="pr_19" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_20" class="underdotted"><span class="blanker">Устройство основания из асфальтовой крошки</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_20" id="pr_20" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_21" class="underdotted"><span class="blanker">Устройство основания из дорожного (тощего) бетона М100</span></label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_21" id="pr_21" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pr_22" class="underdotted"><span class="blanker">Устройство основания из бетона М200, армированног</span>о дорожной сеткой</label>
+                          </td>
+                          <td class="price_cell">
+                            <div class="form-group">
+                              <input type="text" name="pr_22" id="pr_22" class="form-control" size="4">
+                            </div>
+                          </td>
+                          <td>руб./услуга</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   </body>
+</html>
